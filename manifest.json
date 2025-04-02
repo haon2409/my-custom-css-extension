@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Move Controller Button",
+  "version": "1.0",
+  "description": "Adjusts the position of the controller div",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
